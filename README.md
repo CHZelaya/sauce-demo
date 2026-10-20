@@ -26,7 +26,6 @@ git clone <your-repo-url>
 cd saucedemo
 pnpm install
 pnpm exec playwright install --with-deps
-Running the tests
 
 ```
 
