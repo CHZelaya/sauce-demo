@@ -12,12 +12,8 @@ The purpose of this repo is to serve as a portfolio project, in which I can lear
 | Access Control     | Planned | `tests/access.spec.ts`  |
 
 
-Plain english cases and resonins behind them: 
-`docs/test-plan.md`
-
-## My Findings ##
-
-Issues found while tseting, written up as expected vs actual: `docs/findings.md`
+Plain english cases, issues and findings: 
+`docs/`
 
 
 ## Setup ##
@@ -25,13 +21,13 @@ Issues found while tseting, written up as expected vs actual: `docs/findings.md`
 Requirements: Node.js 18+ and pnpm.
 
 ``` bash
-bash
+
 git clone <your-repo-url>
 cd saucedemo
 pnpm install
 pnpm exec playwright install --with-deps
 Running the tests
-bash
+
 ```
 
 ## Running the tests ##
@@ -63,7 +59,7 @@ Followed along with best practices based on Playwrights documentation: https://p
 - **Test Design First**: Cases are written in plain English before any code, and then implemented. 
 - **User-facing Locators**: Role, placeholder, and text locators were preffered over CSS selectors, with test ID's used as a fallback. 
 - **Meaningful Assertions**: Each test checks the outcome, not just the action that ran. Error tests also confirm the user stayed on the same page (i.e.: Login Page)
-- **Paramaterized Table Driven Tests**: For tests taht share the same steps and differ only in data (i.e.: login.spec/ts - Error Messages)
+- **Paramaterized Table Driven Tests**: For tests that share the same steps and differ only in data (i.e.: login.spec/ts - Error Messages)
 
 ## Known Issues and Scope ##
 
