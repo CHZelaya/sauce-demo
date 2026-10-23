@@ -1,15 +1,13 @@
 # Sauce Demo Test Suite #
 
-The purpose of this repo is to serve as a portfolio project, in which I can learn and practice how to write automated end-to-end tests for Sauce Demo. (https://www.saucedemo.com)
+The purpose of this repo is to serve as starter portfolio project, in which I can learn and practice how to write automated end-to-end tests using Playwright for Sauce Demo. (https://www.saucedemo.com)
 
 ## Table of Contents ##
 
 | Area     | Status  | Spec file            |
 | -------- | ------- | -------------------- |
 | Login    | Done    | `tests/login.spec.ts` |
-| Cart     | Planned | `tests/cart.spec.ts`  |
-| Checkout     | Planned | `tests/checkout.spec.ts`  |
-| Access Control     | Planned | `tests/access.spec.ts`  |
+| Access Control     | Done | `tests/access.spec.ts`  |
 
 
 Plain english cases, issues and findings: 
@@ -22,7 +20,7 @@ Requirements: Node.js 18+ and pnpm.
 
 ``` bash
 
-git clone <your-repo-url>
+git clone https://github.com/CHZelaya/sauce-demo
 cd saucedemo
 pnpm install
 pnpm exec playwright install --with-deps
